@@ -2,6 +2,7 @@ import React from "react";
 import { AppContainer } from "./styles";
 import { Card } from "./card";
 import { Column } from "./column";
+import { AddNewItem } from "./AddNewItem";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Column text="Done">
         <Card text="Create GitHub Repository" />
       </Column>
+      <AddNewItem toggleButtonText="+ Add Another list" onAdd={console.log} />
     </AppContainer>
   );
 }
